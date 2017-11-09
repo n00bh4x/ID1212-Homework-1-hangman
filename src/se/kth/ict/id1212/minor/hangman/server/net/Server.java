@@ -25,6 +25,7 @@ public class Server {
                 clientSocket.setSoLinger(true, 5000);
                 new Thread(new ClientHandler(clientSocket, WORDS)).start();
             } catch (IOException e) {
+                System.out.println("GIT");
             }
         }
     }
